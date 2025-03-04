@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar una clase</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Reservar una clase</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="reservas.html">Reservar una clase</a></li>
+        <li><a href="apuntes.html">Descargar apuntes</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form id="reservaForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" required>
+
+      <label for="materia">Materia:</label>
+      <select id="materia" required>
+        <option value="Mates">Mates</option>
+        <option value="Física y Química">Física y Química</option>
+        <option value="Inglés">Inglés</option>
+        <option value="Otros">Otros</option>
+      </select>
+
+      <label for="tema">Tema específico:</label>
+      <textarea id="tema" required></textarea>
+
+      <label for="duracion">Duración:</label>
+      <select id="duracion" required>
+        <option value="1h">1 hora</option>
+        <option value="1.5h">1 hora y media</option>
+        <option value="2h">2 horas</option>
+      </select>
+
+      <label for="modalidad">Modalidad:</label>
+      <select id="modalidad" required>
+        <option value="online">Online</option>
+        <option value="presencial">Presencial</option>
+      </select>
+
+      <button type="submit">Reservar</button>
+    </form>
+  </main>
+  <footer>
+    <p>© 2023 Mis Clases con Ana</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
